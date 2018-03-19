@@ -30,17 +30,41 @@ namespace SEM_cw2
         public string Type
         {
             get { return _type; }
-            set { _type  = value; }
+            set
+            {
+                if (value == "mountain" || value == "road")
+                {
+                    _type = value;
+                }
+                else
+                    throw new ArgumentException("type is wrong");
+            }
         }
         public string Wheels
         {
             get { return _wheels; }
-            set { _wheels = value; }
+            set
+            {
+                if (value == "small" || value == "large")
+                {
+                    _wheels = value;
+                }
+                else
+                    throw new ArgumentException("wheel is wrong");
+            }
         }
         public string Size
         {
             get { return _size; }
-            set { _size = value; }
+            set
+            {
+                if (value == "small" || value == "medium" || value == "large")
+                {
+                    _size = value;
+                }
+                else
+                    throw new ArgumentException("type is wrong");
+            }
         }
         public string Colour
         {
@@ -50,22 +74,54 @@ namespace SEM_cw2
         public string Gears
         {
             get { return _gears; }
-            set { _gears = value; }
+            set
+            {
+                if (value == "Type A" || value == "Type B")
+                {
+                    _gears = value;
+                }
+                else
+                    throw new ArgumentException("gear is wrong");
+            }
         }
         public string Brakes
         {
             get { return _brakes; }
-            set { _brakes = value; }
+            set
+            {
+                if (value == "Type A" || value == "Type B")
+                {
+                    _brakes = value;
+                }
+                else
+                    throw new ArgumentException("brakes is wrong");
+            }
         }
         public string Handlebars
         {
             get { return _handlebars; }
-            set { _handlebars = value; }
+            set
+            {
+                if (value == "Type A" || value == "Type B")
+                {
+                    _handlebars = value;
+                }
+                else
+                    throw new ArgumentException("handlebars are wrong");
+            }
         }
         public string Saddle
         {
             get { return _saddle; }
-            set { _saddle = value; }
+            set
+            {
+                if (value == "Type A" || value == "Type B")
+                {
+                    _saddle = value;
+                }
+                else
+                    throw new ArgumentException("saddle is wrong");
+            }
         }
         public Boolean ExtendedWarranty
         {
