@@ -1,0 +1,41 @@
+﻿<Window x:Class="SEM_cw2.Receipt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEM_cw2"
+        mc:Ignorable="d"
+        Title="Receipt" Height="320" Width="450">
+    <Grid Background="#FFDEE9FB">
+        <Label Content="Order description" HorizontalAlignment="Left" Margin="134,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type:" HorizontalAlignment="Left" Margin="44,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Size:" HorizontalAlignment="Left" Margin="44,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Colour:" HorizontalAlignment="Left" Margin="44,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gears:" HorizontalAlignment="Left" Margin="44,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Brakes:" HorizontalAlignment="Left" Margin="44,177,0,0" VerticalAlignment="Top"/>
+        <Label Content="Handlebars:" HorizontalAlignment="Left" Margin="44,197,0,0" VerticalAlignment="Top"/>
+        <Label Content="Saddle:" HorizontalAlignment="Left" Margin="44,218,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="66" Margin="212,76,0,0" Stroke="Black" VerticalAlignment="Top" Width="167"/>
+        <Label Content="Total Price:" HorizontalAlignment="Left" Margin="224,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="+ £100 for building and testing" HorizontalAlignment="Left" Margin="211,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="(included in total price)" HorizontalAlignment="Left" Margin="231,163,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="66" Margin="210,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="167"/>
+        <Label Content="Estimated completion time" HorizontalAlignment="Left" Margin="218,195,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="type" Content="Label" HorizontalAlignment="Left" Margin="98,76,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="size" Content="Label" HorizontalAlignment="Left" Margin="98,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="colour" Content="Label" HorizontalAlignment="Left" Margin="98,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="gears" Content="Label" HorizontalAlignment="Left" Margin="98,151,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="brakes" Content="Label" HorizontalAlignment="Left" Margin="98,176,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="handlebars" Content="Label" HorizontalAlignment="Left" Margin="111,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="saddle" Content="Label" HorizontalAlignment="Left" Margin="102,219,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalCost" Content="Label" HorizontalAlignment="Left" Margin="291,77,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Wheels:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wheels" Content="Label" HorizontalAlignment="Left" Margin="98,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="days" Content="Label" HorizontalAlignment="Left" Margin="251,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="Bike ID:" HorizontalAlignment="Left" Margin="46,58,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="id" Content="label" HorizontalAlignment="Left" Margin="97,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="Left to pay:" HorizontalAlignment="Left" Margin="224,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="leftToPay" Content="Label" HorizontalAlignment="Left" Margin="291,102,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>
