@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace SEM_cw2
 {
@@ -27,6 +15,7 @@ namespace SEM_cw2
         {
             InitializeComponent();
             bike = _bike;
+            next.IsEnabled = false;
         }
 
         private void find_Click(object sender, RoutedEventArgs e)
@@ -35,13 +24,14 @@ namespace SEM_cw2
             {
                 MessageBox.Show("enter email to find customer");
             }
-            else if(IsValidEmail(findEmail.Text) == true)
+            else if(ValidateEmail(findEmail.Text) == true)
             {
                 // if everything is right
                 MessageBox.Show("customer found");
                 findEmail.Text = "Tom";
                 find.IsEnabled = false;
                 add.IsEnabled = false;
+                next.IsEnabled = true;
             }
             else
             {
@@ -60,7 +50,7 @@ namespace SEM_cw2
             }
             else
             {
-                if (IsValidEmail(email.Text) == false)
+                if (ValidateEmail(email.Text) == false)
                 {
                     MessageBox.Show("email is wrong");
                 }
@@ -78,21 +68,24 @@ namespace SEM_cw2
                         customer.Email = email.Text;
 
                         add.IsEnabled = false;
+                        find.IsEnabled = false;
+                        next.IsEnabled = true;
                     }
                 }
             }
         }
 
-        public static bool IsValidEmail(string inputEmail)
+        public static bool ValidateEmail(string email)
         {
-            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+            string regExpression = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
                   @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
                   @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
-            Regex re = new Regex(strRegex);
-            if (re.IsMatch(inputEmail))
-                return (true);
+            Regex r = new Regex(regExpression);
+
+            if (r.IsMatch(email))
+                return true;
             else
-                return (false);
+                return false;
         }
 
         public static bool ValidateUkPostcode(string postcode)
@@ -104,6 +97,13 @@ namespace SEM_cw2
         {
             Payment p = new Payment(bike, customer);
             p.Show();
+            this.Close();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            Order_Details od = new Order_Details(bike);
+            od.Show();
             this.Close();
         }
     }

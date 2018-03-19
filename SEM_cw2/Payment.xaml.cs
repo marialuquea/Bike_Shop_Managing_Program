@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace SEM_cw2
 {
@@ -22,6 +11,7 @@ namespace SEM_cw2
         Bike bike;
         Customer customer;
         double left;
+        double percent10;
 
         public Payment(Bike _bike, Customer _customer)
         {
@@ -33,16 +23,20 @@ namespace SEM_cw2
 
         private void pay_Click(object sender, RoutedEventArgs e)
         {
-            if (cardnumber == null)
+            if (cardnumber.Text == null)
             {
                 MessageBox.Show("enter card details");
             }
-            else if (IsDigitsOnly(cardnumber.Text) == true)
+            else if (onlyDigits(cardnumber.Text) == true)
             {
                 customer.CardNumber = Convert.ToInt32(cardnumber.Text);
 
                 // If the bank accepts payment
                 customer.Accepted = true;
+
+                percent10 = bike.TotalPrice * 0.10;
+                left = bike.TotalPrice - percent10;
+                leftToPay.Content = "£ " + left;
             }
             else
             {
@@ -50,7 +44,7 @@ namespace SEM_cw2
             }
         }
 
-        public bool IsDigitsOnly(string str)
+        public bool onlyDigits(string str)
         {
             foreach (char c in str)
             {
@@ -64,17 +58,22 @@ namespace SEM_cw2
         private void print_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("printing paper receipt");
-
-            double percent10 = bike.TotalPrice * 0.10;
-            left = bike.TotalPrice - percent10;
-
-            leftToPay.Content = "£ " + left;
-        }
-
-        private void viewDetails_Click(object sender, RoutedEventArgs e)
-        {
             Receipt r = new Receipt(bike, left);
             r.Show();
+        }
+
+        private void close_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            this.Close();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            Customer_Details cd = new Customer_Details(bike);
+            cd.Show();
+            this.Close();
         }
     }
 }

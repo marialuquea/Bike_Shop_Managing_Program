@@ -25,6 +25,7 @@ namespace SEM_cw2
             handlebars.Content = bike.Handlebars;
             saddle.Content = bike.Saddle;
             id.Content = bike.ID;
+            warranty.Content = bike.ExtendedWarranty;
 
             //calculate total price
             calculateCost();
@@ -93,12 +94,12 @@ namespace SEM_cw2
             if (inStock == true)
             {
                 // If all items are in stock
-                daysLeft += 1;
+                daysLeft += 3;
             }
             else
             {
                 // If items are needed
-                daysLeft += 5;
+                daysLeft += 8;
             }
 
             // Add half a day to complete a bike

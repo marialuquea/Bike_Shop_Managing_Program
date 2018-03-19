@@ -1,27 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace SEM_cw2
 {
     public class Person
     {
 
         private string _name;
-        private int _id;
+        private string _address;
+        private string _email;
 
         public string Name
         {
             get { return _name; }
             set { _name = value; }
         }
-
-        public int ID
+        public string Address
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _address; }
+            set { _address = value; }
+        }
+        public string Email
+        {
+            get { return _address; }
+            set { _address = value; }
         }
 
     }

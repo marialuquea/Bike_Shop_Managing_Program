@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SEM_cw2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="380" Width="525">
+        Title="MainWindow" Height="390" Width="525">
     <Grid Background="#FFDEE9FB">
-        <Label Content="Bike details" HorizontalAlignment="Left" Margin="216,38,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="Bike details" HorizontalAlignment="Left" Margin="192,28,0,0" VerticalAlignment="Top" Width="124" FontSize="20"/>
         <Label Content="Select type: " HorizontalAlignment="Left" Margin="48,87,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Road" Content="Road bike" HorizontalAlignment="Left" Margin="155,90,0,0" VerticalAlignment="Top" Width="103" Click="Road_Click"/>
-        <Button x:Name="Mountain" Content="Mountain bike" HorizontalAlignment="Left" Margin="284,90,0,0" VerticalAlignment="Top" Width="108" Click="Mountain_Click"/>
+        <Button x:Name="Road" Content="Road bike" HorizontalAlignment="Left" Margin="161,90,0,0" VerticalAlignment="Top" Width="103" Click="Road_Click"/>
+        <Button x:Name="Mountain" Content="Mountain bike" HorizontalAlignment="Left" Margin="286,90,0,0" VerticalAlignment="Top" Width="108" Click="Mountain_Click"/>
         <Label Content="Size" HorizontalAlignment="Left" Margin="62,150,0,0" VerticalAlignment="Top"/>
         <Button x:Name="Small" Content="Small" HorizontalAlignment="Left" Margin="137,153,0,0" VerticalAlignment="Top" Width="88" Click="Small_Click"/>
         <Button x:Name="medium" Content="Medium" HorizontalAlignment="Left" Margin="248,153,0,0" VerticalAlignment="Top" Width="88" Click="medium_Click"/>
         <Button x:Name="large" Content="Large" HorizontalAlignment="Left" Margin="364,153,0,0" VerticalAlignment="Top" Width="88" Click="large_Click"/>
         <Label Content="Colour:" HorizontalAlignment="Left" Margin="62,188,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="grey" Content="" HorizontalAlignment="Left" Margin="137,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFA6A2A2" Click="grey_Click"/>
-        <Button x:Name="purple" Content="" HorizontalAlignment="Left" Margin="431,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFBA23E3" Click="purple_Click"/>
-        <Button x:Name="red" Content="" HorizontalAlignment="Left" Margin="381,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFEE1212" Click="red_Click"/>
-        <Button x:Name="yellow" Content="" HorizontalAlignment="Left" Margin="335,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFC7D21E" Click="yellow_Click"/>
-        <Button x:Name="orange" Content="" HorizontalAlignment="Left" Margin="283,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFE4870A" Click="orange_Click"/>
-        <Button x:Name="green" Content="" HorizontalAlignment="Left" Margin="231,194,0,0" VerticalAlignment="Top" Width="33" Background="#FF8EC04B" Click="green_Click"/>
-        <Button x:Name="blue" Content="" HorizontalAlignment="Left" Margin="187,194,0,0" VerticalAlignment="Top" Width="33" Background="#FF5193D2" Click="blue_Click"/>
+        <Button x:Name="grey" Content="" HorizontalAlignment="Left" Margin="150,194,0,0" VerticalAlignment="Top" Width="33" Background="WhiteSmoke" Click="grey_Click" BorderBrush="#FF646464"/>
+        <Button x:Name="purple" Content="" HorizontalAlignment="Left" Margin="390,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFE2D5E7" Click="purple_Click" BorderBrush="#FF9C81AC"/>
+        <Button x:Name="red" Content="" HorizontalAlignment="Left" Margin="350,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFF7CECC" Click="red_Click" BorderBrush="#FFAD5A54"/>
+        <Button x:Name="yellow" Content="" HorizontalAlignment="Left" Margin="310,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFFFF2CD" Click="yellow_Click" BorderBrush="#FFD0B75B"/>
+        <Button x:Name="orange" Content="" HorizontalAlignment="Left" Margin="270,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFFFE6CD" Click="orange_Click" BorderBrush="#FFE4B036"/>
+        <Button x:Name="green" Content="" HorizontalAlignment="Left" Margin="230,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFD5E8D4" Click="green_Click" BorderBrush="#FF91B879"/>
+        <Button x:Name="blue" Content="" HorizontalAlignment="Left" Margin="190,194,0,0" VerticalAlignment="Top" Width="33" Background="#FFD9E8FB" Click="blue_Click" BorderBrush="#FF718EB8"/>
         <Label Content="Gears" HorizontalAlignment="Left" Margin="56,230,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="gears" HorizontalAlignment="Left" Margin="137,230,0,0" VerticalAlignment="Top" Width="88" SelectionChanged="gears_SelectionChanged">
             <ComboBoxItem Content="Type A" HorizontalAlignment="Left" Width="92"/>
@@ -46,8 +46,8 @@
         <Button x:Name="next" Content="Next" HorizontalAlignment="Left" Margin="431,322,0,0" VerticalAlignment="Top" Width="75" Click="next_Click"/>
         <CheckBox Content="Extended warranty" HorizontalAlignment="Left" Margin="126,318,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
         <Label Content="Wheels:" HorizontalAlignment="Left" Margin="58,117,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="wheels_small" Content="Small" HorizontalAlignment="Left" Margin="169,122,0,0" VerticalAlignment="Top" Width="75" Click="wheels_small_Click"/>
-        <Button x:Name="wheels_large" Content="Large" HorizontalAlignment="Left" Margin="299,122,0,0" VerticalAlignment="Top" Width="75" Click="wheels_large_Click"/>
+        <Button x:Name="wheels_small" Content="Small" HorizontalAlignment="Left" Margin="189,122,0,0" VerticalAlignment="Top" Width="75" Click="wheels_small_Click"/>
+        <Button x:Name="wheels_large" Content="Large" HorizontalAlignment="Left" Margin="285,122,0,0" VerticalAlignment="Top" Width="75" Click="wheels_large_Click"/>
 
     </Grid>
 </Window>

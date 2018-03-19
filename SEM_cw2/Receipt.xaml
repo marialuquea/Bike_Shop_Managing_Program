@@ -7,35 +7,37 @@
         mc:Ignorable="d"
         Title="Receipt" Height="320" Width="450">
     <Grid Background="#FFDEE9FB">
-        <Label Content="Order description" HorizontalAlignment="Left" Margin="134,31,0,0" VerticalAlignment="Top"/>
-        <Label Content="Type:" HorizontalAlignment="Left" Margin="44,76,0,0" VerticalAlignment="Top"/>
-        <Label Content="Size:" HorizontalAlignment="Left" Margin="44,112,0,0" VerticalAlignment="Top"/>
-        <Label Content="Colour:" HorizontalAlignment="Left" Margin="44,131,0,0" VerticalAlignment="Top"/>
-        <Label Content="Gears:" HorizontalAlignment="Left" Margin="44,151,0,0" VerticalAlignment="Top"/>
-        <Label Content="Brakes:" HorizontalAlignment="Left" Margin="44,177,0,0" VerticalAlignment="Top"/>
-        <Label Content="Handlebars:" HorizontalAlignment="Left" Margin="44,197,0,0" VerticalAlignment="Top"/>
-        <Label Content="Saddle:" HorizontalAlignment="Left" Margin="44,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="Order description" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Type:" HorizontalAlignment="Left" Margin="58,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Size:" HorizontalAlignment="Left" Margin="61,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Colour:" HorizontalAlignment="Left" Margin="47,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gears:" HorizontalAlignment="Left" Margin="52,160,0,0" VerticalAlignment="Top"/>
+        <Label Content="Brakes:" HorizontalAlignment="Left" Margin="48,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="Handlebars:" HorizontalAlignment="Left" Margin="23,200,0,0" VerticalAlignment="Top"/>
+        <Label Content="Saddle:" HorizontalAlignment="Left" Margin="47,220,0,0" VerticalAlignment="Top"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="66" Margin="212,76,0,0" Stroke="Black" VerticalAlignment="Top" Width="167"/>
-        <Label Content="Total Price:" HorizontalAlignment="Left" Margin="224,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total price:" HorizontalAlignment="Left" Margin="221,79,0,0" VerticalAlignment="Top"/>
         <Label Content="+ £100 for building and testing" HorizontalAlignment="Left" Margin="211,147,0,0" VerticalAlignment="Top"/>
         <Label Content="(included in total price)" HorizontalAlignment="Left" Margin="231,163,0,0" VerticalAlignment="Top"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="66" Margin="210,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="167"/>
         <Label Content="Estimated completion time" HorizontalAlignment="Left" Margin="218,195,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="type" Content="Label" HorizontalAlignment="Left" Margin="98,76,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="size" Content="Label" HorizontalAlignment="Left" Margin="98,112,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="colour" Content="Label" HorizontalAlignment="Left" Margin="98,131,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="gears" Content="Label" HorizontalAlignment="Left" Margin="98,151,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="brakes" Content="Label" HorizontalAlignment="Left" Margin="98,176,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="handlebars" Content="Label" HorizontalAlignment="Left" Margin="111,196,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="saddle" Content="Label" HorizontalAlignment="Left" Margin="102,219,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="totalCost" Content="Label" HorizontalAlignment="Left" Margin="291,77,0,0" VerticalAlignment="Top" Width="76"/>
-        <Label Content="Wheels:" HorizontalAlignment="Left" Margin="44,92,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="wheels" Content="Label" HorizontalAlignment="Left" Margin="98,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="type" Content="Label" HorizontalAlignment="Left" Margin="100,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="size" Content="Label" HorizontalAlignment="Left" Margin="100,120,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="colour" Content="Label" HorizontalAlignment="Left" Margin="100,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="gears" Content="Label" HorizontalAlignment="Left" Margin="100,160,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="brakes" Content="Label" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="handlebars" Content="Label" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="saddle" Content="Label" HorizontalAlignment="Left" Margin="100,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalCost" Content="Label" HorizontalAlignment="Left" Margin="298,79,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Wheels:" HorizontalAlignment="Left" Margin="44,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wheels" Content="Label" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top"/>
         <Label x:Name="days" Content="Label" HorizontalAlignment="Left" Margin="251,227,0,0" VerticalAlignment="Top"/>
-        <Label Content="Bike ID:" HorizontalAlignment="Left" Margin="46,58,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="id" Content="label" HorizontalAlignment="Left" Margin="97,58,0,0" VerticalAlignment="Top"/>
-        <Label Content="Left to pay:" HorizontalAlignment="Left" Margin="224,103,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="leftToPay" Content="Label" HorizontalAlignment="Left" Margin="291,102,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Bike ID:" HorizontalAlignment="Left" Margin="45,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="id" Content="Label" HorizontalAlignment="Left" Margin="100,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Left to pay:" HorizontalAlignment="Left" Margin="220,107,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="leftToPay" Content="Label" HorizontalAlignment="Left" Margin="298,108,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Extended warranty:" HorizontalAlignment="Left" Margin="13,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="warranty" Content="Label" HorizontalAlignment="Left" Margin="126,240,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
