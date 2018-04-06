@@ -1,0 +1,6 @@
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\bin\Debug\CodedUITest.dll
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\bin\Debug\CodedUITest.pdb
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\obj\Debug\CodedUITest.csprojResolveAssemblyReference.cache
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\obj\Debug\CodedUITest.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\obj\Debug\CodedUITest.dll
+C:\Users\Maria\Documents\2nd year\Software Engineering Methods\cw2 github\SEM_cw2\CodedUITest\obj\Debug\CodedUITest.pdb
