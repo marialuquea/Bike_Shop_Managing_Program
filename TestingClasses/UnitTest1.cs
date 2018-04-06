@@ -18,12 +18,6 @@ namespace TestingClasses
         }
 
         [TestMethod]
-        public void typeTest2()
-        {
-            bike.Type = "small";
-        }
-
-        [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void wheelTest()
         {

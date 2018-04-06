@@ -89,6 +89,7 @@ namespace SEM_cw2
 
         public void calculateEstimatedTime()
         {
+            // check that items are in stock
             Boolean inStock = true;
 
             if (inStock == true)

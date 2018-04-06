@@ -19,6 +19,7 @@ namespace SEM_cw2
             bike = _bike;
             customer = _customer;
             leftToPay.Content = "£ " + _bike.TotalPrice;
+            print.IsEnabled = false;
         }
 
         private void pay_Click(object sender, RoutedEventArgs e)
@@ -37,6 +38,9 @@ namespace SEM_cw2
                 percent10 = bike.TotalPrice * 0.10;
                 left = bike.TotalPrice - percent10;
                 leftToPay.Content = "£ " + left;
+
+                //make print receipt button available
+                print.IsEnabled = true;
             }
             else
             {

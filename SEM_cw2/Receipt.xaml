@@ -38,6 +38,7 @@
         <Label x:Name="leftToPay" Content="Label" HorizontalAlignment="Left" Margin="298,108,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Extended warranty:" HorizontalAlignment="Left" Margin="13,240,0,0" VerticalAlignment="Top"/>
         <Label x:Name="warranty" Content="Label" HorizontalAlignment="Left" Margin="126,240,0,0" VerticalAlignment="Top"/>
+        <Label Content="days" HorizontalAlignment="Left" Margin="307,227,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

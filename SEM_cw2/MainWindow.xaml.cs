@@ -10,7 +10,7 @@ namespace SEM_cw2
     public partial class MainWindow : Window
     {
 
-        int id = 1;
+        static int id = 1;
         public MainWindow()
         {
             InitializeComponent();
