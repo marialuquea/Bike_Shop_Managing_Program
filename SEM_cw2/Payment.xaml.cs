@@ -28,10 +28,8 @@ namespace SEM_cw2
             {
                 MessageBox.Show("enter card details");
             }
-            else if (onlyDigits(cardnumber.Text) == true)
+            else if (onlyDigits(cardnumber.Text) == true && (cardnumber.Text.Length == 16))
             {
-                customer.CardNumber = Convert.ToInt32(cardnumber.Text);
-
                 // If the bank accepts payment
                 customer.Accepted = true;
 
@@ -44,7 +42,7 @@ namespace SEM_cw2
             }
             else
             {
-                MessageBox.Show("do not leave spaces between the numbers");
+                MessageBox.Show("Do not leave spaces between the numbers and make sure there are 16 digits");
             }
         }
 
