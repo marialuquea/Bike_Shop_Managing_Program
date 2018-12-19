@@ -10,10 +10,10 @@ Open in Visual Studio 2017
 
 **Screenshots**
 
-![Sccreenshot](Docs/1png)
+![Sccreenshot](Docs/1.png)
 
-![Sccreenshot](Docs/2png)
+![Sccreenshot](Docs/2.png)
 
-![Sccreenshot](Docs/3png)
+![Sccreenshot](Docs/3.png)
 
-![Sccreenshot](Docs/4png)
+![Sccreenshot](Docs/4.png)
